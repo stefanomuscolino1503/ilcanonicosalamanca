@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+
+   <teiHeader>
+      <fileDesc>
+
+         <titleStmt>
+            <title> Codifica XML-TEI della novella "Il Canonico Salamanca"</title>
+            <author>Luigi Capuana</author>
+
+            <respStmt>
+               <resp>Codifica del testo in formato XML-TEI a cura di</resp>
+               <name>Stefano Muscolino</name>
+            </respStmt>
+
+         </titleStmt>
+
+         <publicationStmt>
+            <p> "Le Paesane" è una raccolta formata da 21 testi (20 novelle e il testo teatrale Malìa), di Luigi Capuana pubblicata per la prima volta nel 1894. "Il Canonico Salamanca" rappresenta la prima novella della raccolta ed è datata "Roma, Settembre 1891". </p>
+         </publicationStmt>
+
+
+         <sourceDesc>
+            <listPerson>
+
+                <person xml:id="Antoine">
+                  <persName> Antoine </persName>
+                  <note> è autore di trattati di teologia e diritto ecclesiastico studiati dal canonico Salamanca per la preparazione al concorso per diventare prevosto. </note>
+               </person>
+
+               <person xml:id="Canonico_Costa">
+                  <persName> Canonico Costa </persName>
+                  <note> è un collega canonico di Salamanca ed il suo principale rivale nella competizione per ottenere il titolo di prevosto. </note>
+               </person>
+
+               <person xml:id="Canonico_Salamanca">
+                  <persName> Canonico Salamanca</persName>
+                  <note>  è il protagonista dell'opera. Egli è un ecclesiastico che ricopre la sua carica per mantenere una "lucrosa tradizione" familiare poiché in realtà "non amava il breviario". La sua vera e unica passione è la caccia, un interesse che manifesta anche durante l'ufficio religioso. </note>
+               </person>
+
+               <person xml:id="Canonico_Stuto">
+                  <persName> Canonico Stuto </persName>
+                  <note> è un canonico collega di Salamanca anche lui appassionato di caccia </note>
+               </person>
+
+                <person xml:id="Capraia">
+                  <persName> Capraia </persName>
+                  <note> è una persona che viene descritta da 'Nzulu Strano come perennemente malata. </note>
+               </person>
+
+               <person xml:id="Comare_Nina">
+                  <persName> Comare Nina </persName>
+                  <note> è una vecchierella sciancata (zoppa) che abitava nella viuzza del canonico Salamanca. </note>
+               </person>
+               
+                <person xml:id="Corda_al_piede">
+                  <persName> Corda al piede </persName>
+                  <note> è un contadino e il proprietario di un cane da caccia eccezionale che il canonico Salamanca desidera ardentemente. </note>
+               </person>
+
+                <person xml:id="Cottone">
+                  <persName> Cottone </persName>
+                  <note> è un cacciatore che conosce bene il cane di Corda al Piede. </note>
+               </person>
+
+               <person xml:id="Don_Franco">
+                  <persName> Don Franco </persName>
+                  <note> è il fratello del Canonico Salamanca. </note>
+               </person>
+               
+               <person xml:id="Donna_Agnese">
+                  <persName> Donna Agnese </persName>
+                  <note>  è la sorella del canonico Salamanca. È una donna severa e religiosa, nota per non sopportare 'Nzulu Strano, considerato uno "scroccone" e per brontolare continuamente contro gli hobby del fratello, come la fabbricazione dei chiòccoli. </note>
+               </person>
+
+              <person xml:id="Donna_Totò">
+                  <persName> Donna Totò </persName>
+                  <note> è la signora presso cui il canonico Salamanca si reca abitualmente dopo la messa per prendere una tazza di buon caffè accompagnata da crostini e biscotti. Questa loro amicizia è motivo di scandalo.  </note>
+               </person>
+              
+               <person xml:id="Ferdinando_II">
+                  <persName> Ferdinando II  </persName>
+                  <note> è un re menzionato nel testo in un'espressione iperbolica usata da 'Nzulu Strano. </note>
+               </person>
+               
+                <person xml:id="Le_Clerc">
+                  <persName> Le Clerc </persName>
+                  <note> è autore di trattati di teologia e diritto ecclesiastico studiati dal canonico Salamanca per la preparazione al concorso per diventare prevosto. </note>
+               </person>
+
+                 <person xml:id="Monsignore">
+                  <persName> Monsignore </persName>
+                  <note> è il titolo dato al vescovo. </note>
+               </person>
+            
+               
+               <person xml:id="Nzulu_Strano">
+                  <persName> Nzulu Strano </persName>
+                  <note> è un cacciatore ed è il confidente del Canonico Salamanca per ciò che riguarda la caccia </note>
+               </person>
+               
+               <person xml:id="Prevosto">
+                  <persName> Prevosto </persName>
+                  <note> è il capo dei canonici. Egli entra in contrasto con il Canonico Salamanca per le sue abitudini che non rispettano i principi ecclesiastici </note>
+               </person>
+               
+             </listPerson>
+            
+
+
+            <listPlace>
+
+               <place xml:id="Bardella">
+                   <placeName> Bardella </placeName>
+                   <note> Bardella è una località fittizia menzionata in relazione ai doveri religiosi del canonico Salamanca. </note>
+               </place>
+
+
+                <place xml:id="Malta">
+                   <placeName> Malta </placeName>
+                   <note> è uno stato insulare dell'Europa meridionale. Nel testo rappresenta il luogo di provenienza del fucile a due canne del canonico Salamanca</note>
+               </place>
+
+              <place xml:id="Modica">
+                  <placeName> Modica </placeName>
+                  <note> è un comune italiano situato nella Sicilia sud-orientale. Nel testo è la sede del "capitan d'armi", amico del Canonico Salamanca </note>
+               </place>
+
+                <place xml:id="Piana">
+                    <placeName> Piana </placeName>
+                    <note> è una località menzionata come sfondo per le attività di caccia del canonico Salamanca in gioventù.</note>
+                </place>
+
+               <place xml:id="Poggio_Rosso">
+                    <placeName> Poggio Rosso </placeName>
+                    <note> Luogo in cui i contadini avevano scovato una lepre</note>
+                </place>
+
+                <place xml:id="Ragusa">
+                     <placeName> Ragusa </placeName>
+                     <note> è un comune italiano situato nella Sicilia sud-orientale. Nel testo è la città in cui vive un Saponaio che possiede un cane da caccia di razza bracco eccezionale</note>
+                </place>
+
+                <place xml:id="Roma">
+                     <placeName> Roma </placeName>
+                     <note> è la capitale italiana e il luogo di composizione dell'opera da parte dell'autore.</note>
+                </place>
+
+               <place xml:id="Vallone_della_Lamia">
+                     <placeName> Vallone della Làmia </placeName>
+                     <note> È lo svolto della strada dove il canonico Salamanca, in viaggio verso Bardella per celebrare la messa della domenica, fu atteso da Corda-al-Piede.</note>
+                </place>
+
+            </listPlace>
+            
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+   
+   <text>
+      <body>
+         <pb/>
+
+         <p>
+            IL <persName ref="Canonico_Salamanca">CANONICO SALAMANCA</persName>
+         </p>
+
+         <p>
+            Il <persName ref="Canonico_Salamanca">canonico Salamanca</persName> non amava molto il breviario; pure mancava di rado al coro, a recitare insieme con gli altri canonici l'uffizio di laudi e di vespro, perché allora il coro fruttava e le rendite venivano spartite soltanto tra i presenti, segnati <distinct type="archaic">su lo</distinct> scartafaccio bislugno che si conservava in sagrestia. 
+         </p>
+         
+         <p>
+          Spesso però, tra un versetto di salmo e l'altro, egli appiccava conversazione con questo o quello dei canonici seduti ai lati del suo stallo, per ragionare di caccia, sua gran passione, senza curarsi delle occhiate bieche del <persName ref="Prevosto"> Prevosto </persName> che, dirimpetto, bofonchiava l'ufficio con voce roca, quasi invece di cose sante brontolasse bestemmie.
+         </p>
+
+         <p>
+            E mentre i colleghi borbottavano: Retribuere servo tuo con quel che segue, egli susurrava al <persName ref="Canonico_Stuto"> canonico Stuto:</persName>
+         </p>
+
+         <p>   
+            -Sabato andrò ad ammazzare una <term type="caccia">lepre</term>  a  <placeName ref="Poggio_Rosso">Poggio Rosso;</placeName> l'hanno scovata i contadini. 
+         </p>
+
+         <pb/>
+
+         <p>
+            -Perchè me lo dite?-rispondeva quegli, con l'acquolina in bocca. -Incola ego sum in terra... Ve la mangerete voi solo; buon pro' vi faccia! 
+         </p>
+
+         <p>
+            -Sono arrivate anche le <term type="caccia">pernici.</term> Ce n'è uno stormo tra gli ulivi del Saraceno.
+         </p>
+
+         <p>
+            -Et lingua nostra exultatione... non me ne importa niente. Tanto, se vorrò cavarmene il gusto, bisognerà che le compri al mercato. 
+         </p>
+
+         <p>
+            -Ve ne manderò una in regalo... Portantes manipulos...
+         </p>
+
+         <p>   
+            -Sì,come il <term type="caccia">coniglio</term>  che mi prometteste l'altra volta! 
+         </p>
+
+         <p>
+            -Ameeen!
+         </p>
+
+         <p>
+            Quell'amen cosi stiracchiato era del <persName ref="Prevosto"> Prevosto, </persName> per interrompere la conversazione. 
+         </p>
+
+         <p>
+            -Raglia! raglia! -gli rispondeva il <persName ref="Canonico_Salamanca"> canonico Salamanca</persName> sotto voce. E continuava: 
+         </p>
+
+         <p>   
+            -Il mio <term type="caccia">levriere</term> è malato!... È <term type="caccia">cane</term> che vale cent'<distinct type="archaic">onze!</distinct> 
+         </p>
+
+         <p>
+            -Forse anche meno!
+         </p>
+         
+         <p>
+            -Più di cent'<distinct type="archaic">onze,</distinct> se ve n'intendeste!... E mi è stata regalata certa <term type="caccia"> polvere </term> inglese portentosa. Andrò a provarla domani.
+         </p>
+
+         <p>
+            -Domani è l'anniversario di Pocasemenza; sei <distinct type="archaic"> tarì</distinct> a testa. 
+         </p>
+
+         <p>
+            -Allora, domani l'altro.
+         </p>
+
+         <p>
+            -...Et spiritui sanctooo! -stiracchiava il <persName ref="Prevosto"> Prevosto.  </persName> 
+         </p>
+
+         <p>
+            -Raglia!
+         </p>
+
+         <p>
+            Il <persName ref="Canonico_Salamanca"> canonico Salamanca</persName> non lo poteva soffrire. C'era della ruggine fra loro, per la prevostura. Secondo lui, <persName ref="Monsignore"> Monsignore</persName>  gli aveva fatto torto <pb/> nella circostanza di quel concorso, che gli era costato un'indigestione di trattati di teologia dommatica, di teologia morale, di casistica, di diritto ecclesiastico dopo che non ne aveva più aperto neppure uno da che gli erano state poste addosso la mozzetta e la stola di canonico. 
+         </p>
+
+         <p>
+            Quel capriccio del concorso gli era saltato in testa tutt'a un tratto; e per dieci mesi, rassegnatosi al sacrificio di lasciar da banda <term type="caccia">cani, </term>  <term type="caccia">fucile,</term>  <term type="caccia">furetto,</term> <term type="caccia">reti</term> ogni cosa, s'era rimesso a sgobbare come in seminario, facendo centinaia di pipate sugli in-folio dell'<persName ref="Antoine"> Antoine,</persName> del <persName ref="Le_CLerc"> Le Clerc</persName> e compagnia bella, per insegnare la creanza, com'egli diceva, a quel villanzone del <persName ref="Canonico_Costa"> Canonico Costa,</persName> che voleva diventare prevosto lui.
+         </p>
+
+         <p>
+            Aveva anche evitato, per tutto quel tempo, certa pratica che dava da sparlare alle cattive lingue, e per la quale il vescovo, nell'ultima visita diocesana, gli aveva fatto, a quattr'occhi, un predicozzo.
+            Egli s'era difeso: 
+         </p>
+
+         <p>
+            -Calunnie, <persName ref="Monsignore"> Monsignore!</persName> Io vado da <distinct type="archaic"> cotesta </distinct> signora soltanto per prendere una buona tazza di caffé dopo la messa.
+         </p>
+
+         <p>
+            -La prenda piuttosto a casa sua, signor canonico. 
+         </p>
+
+         <p>
+            -Ci ho fatto l'abitudine, <persName ref="Monsignore"> Monsignore.</persName>
+         </p>
+
+         <p>
+            -Cattiva abitudine! 
+         </p>
+
+         <p>
+            E per un po' di tempo, aveva dovuto smettere. Cosi, preparandosi a insegnare la creanza a quel collotorto del <persName ref="Canonico_Costa"> canonico Costa,</persName> una mattina, nel sorbire la solita tazza di caffè dalla signora, le aveva annunziato: <pb/>
+
+         </p>
+
+         <p>
+            -Passeranno dei mesi, prima che venga a prenderne un'altra! 
+         </p>
+
+         <p>
+            Donna Totò, che imbeccava in quel momento una nidiata di <term type="caccia">merli,</term> s'era voltata con gran stupore negli occhi, domandando:
+         </p>
+
+         <p>
+            -Perché?
+         </p>
+
+         <p>
+            -Il concorso!... <persName ref="Monsignore"> Monsignore!...</persName>
+         </p>
+
+         <p>
+            E tenendo fra i denti la pipa, ch'egli stava accendendo, buttava dietro a ogni parola uno sdegnoso sbuffo di fumo. 
+         </p>
+
+         <p>
+            -C'è quel collotorto, capite?... che vuol darla a bere alla gente e a <persName ref="Monsignore"> Monsignore.</persName> Combatte con tutte le armi, capite? 
+         </p>
+
+         <p>
+            E sbuffi di fumo, a ogni due, tre parole. 
+         </p>
+
+         <p>
+            Donna Totò, non sapeva capacitarsi in che maniera quel concorso alla prevostura potesse impedirgli la pipata durante la fermatina in casa di lei prima di dir messa, e l'andarvi a prendere il caffè <distinct type="archaic"> coi</distinct> crostini dopo, per non guastarsi lo stomaco restando a digiuno fino a tardi. 
+         </p>
+
+         <p>
+            -Fatelo intendere a <persName ref="Monsignore"> Monsignore!</persName> -aveva conchiuso il canonico.
+         </p>
+
+         <p>
+            Ma non gli giovò a niente.
+         </p>
+
+         <p>
+            <persName ref="Monsignore"> Monsignore</persName> s'era lasciato abbindolare, e aveva fatto prevosto quell' altro, senza tener conto del parere degli esaminatori, nè delle eresie, nè dei solecismi di latino di cui l'ignorantone aveva seminato a larga mano gli scritti del concorso. 
+         </p>
+
+         <p>
+         -Raglia! Raglia!
+         </p>
+
+         <p>
+            Era quel che si meritava. 
+         </p>
+         <pb/>
+
+         <p>
+             * * *
+         </p>
+
+         <p>
+            Il <persName ref="Canonico_Salamanca"> canonico Salamanca,</persName> che poteva spiegare benissimo per quali cattive ragioni non fosse diventato prevosto, non avrebbe intanto saputo dire perchè si fosse messo il collare e avesse preso gli ordini sacri. Nella famiglia, ab immemorabile, c'era sempre stato un canonico; per continuare la 
+            lucrosa tradizione, suo padre aveva fatto indossare la zimarra a lui e lo aveva mandato in seminario. 
+            Lui come lui, non  aveva detto nè si, nè no. Studiacchiata un po' di teologia, come avrebbe studiacchiato un po'di codice o di medicina all'università, ricevuti gli  ordini, la messa, e in fine il 
+            canonicato, aveva posto subito i libri teologici a dormire sotto la polvere negli scaffali, e s'era abbandonato interamente alla sua passione giovanile, la caccia. 
+         </p>
+
+         <p>
+            Ora, il vero breviario gli pareva quel <term type="caccia">fucile</term> a due canne, novità fatta venire da  <placeName ref="Malta">Malta,</placeName> e costata un occhio; e i colpi sparati alle <term type="caccia">beccacce,</term>  ai <term type="caccia">conigli,</term> alle <term type="caccia">pernici,</term>  alle <term type="caccia">lepri,</term> alle <term type="caccia">volpi,</term> quando capitavano, ai <term type="caccia">porci spini,</term>  anche più rari, gli suonavano all'orecchio assai meglio di tutti i salmi, 
+            di tutte le antifone e dello stesso uffizio dei morti, 
+            che pure veniva pagato li per li, appena terminata la funzione. 
+         </p>
+
+         <p>
+            A casa sua era un via vai di cacciatori e dilettanti e di professione. Chi lo pregava per ottenere in prestito il <term type="caccia">bracco</term>  o il <term type="caccia">levriere,</term> o il <term type="caccia">furetto;</term> chi si raccomandava per un po' di quella <term type="caccia">polvere</term> <pb/> miracolosa, che si trovava soltanto presso il signor canonico ed era inutile cercarla altrove; chi veniva a dargli l'avviso di certo posto dove la <term type="caccia"> selvaggina</term>  formicolava; chi a raccontargli le peripezie di una partita di caccia andata a male:
+         </p>
+
+         <p>
+         - Ah, ci voleva il signor canonico!
+         </p>
+
+         <p>
+            E il signor canonico, sorridendo invanito, prestava il <term type="caccia">bracco,</term>  il <term type="caccia">levriere,</term> il <term type="caccia">furetto,</term> <distinct type="archaic">pei</distinct> quali poco prima s'era lasciato scappare: 
+         </p>
+
+         <p>
+            -Non li presterei neppure a mio padre!
+         </p>
+
+         <p>
+            E regalava, due, tre cariche di quella <term type="caccia">polvere</term> proprio inglese, che, a sentirlo, pareva gli fosse stata 
+            portata <distinct type="archaic"> a dirittura </distinct> di mano degli <distinct type="archaic"> angioli,</distinct> e di cui 
+            c'erano al mondo le sole poche libbre da lui possedute. 
+         </p>
+
+          <p>
+             * * *
+          </p>
+
+         <p>
+            Il gran confidente del canonico però era <persName ref="Nzulu_Strano"> 'Nzulu Strano, </persName> la prima balestra del paese, com'egli lo aveva battezzato.
+         </p>
+
+         <p>
+             Arrivava ordinariamente verso un'ora di notte, stanco d'una giornata di caccia, mestiere di cui viveva, allampanato e giallastro, con quel vestito di frustagno color cece, che lo faceva parere più smorto, <distinct type="archaic"> coi</distinct> calzoni infilati negli stivali e la pipa di radica in bocca. Quando portava qualche gran notizia, si fermava nel vano dell'uscio, con le gambe allargate, agitando una mano: 
+         </p>
+
+         <p>
+            -Il Padre Eterno dei bracchi! L'ha un saponaio di  <placeName ref="Ragusa">Ragusa.</placeName>
+         </p>
+
+         <p>
+             -Chi te l'ha detto? 
+         </p>
+
+         <pb/>
+         <p>
+            E <persName ref="Nzulu_Strano"> 'Nzulu, </persName> una sera, aveva sfilato una storia che non finiva più; vita e miracoli di quel Padre Eterno dei bracchi: Instancabile! E un fiuto! E un fermo! Inchiodava la <term type="caccia">selvaggina.</term> Il cacciatore poteva 
+            con tutto il suo comodo ricaricare il <term type="caccia">fucile</term> e godersi il colpo; una meraviglia!
+         </p>
+
+         <p>
+            -Vorrà venderlo?
+         </p>
+
+         <p>
+            -Neppure a <persName ref="Ferdinando_II"> Ferdinando II.</persName>
+         </p>
+
+         <p>
+            Gli occhi del canonico sfavillarono cupidi:
+         </p>
+
+         <p>
+            -Se tu <distinct type="archaic"> riescissi!</distinct>
+         </p>
+
+         <p>
+            <persName ref="Nzulu_Strano"> 'Nzulu,</persName> compreso che significassero quelle tre 
+            parole buttate così per aria, alzò le spalle masticando il bocchino della pipa: 
+         </p>
+
+         <p>
+            -E se mi arrestano?
+         </p>
+
+         <p>
+            -Va' là! Il capitan d'armi di <placeName ref="Modica">Modica</placeName> è un amico. Ti hanno forse arrestato per Nièula e per Cardillo? 
+         </p>
+
+         <p>
+            Trattandosi di <term type="caccia">cani,</term> il <persName ref="Canonico_Salamanca"> Canonico Salamanca</persName> aveva pochi scrupoli, perdeva facilmente le giuste nozioni del tuo e del mio. Per quel Padre Eterno 
+            dei bracchi, avrebbe speso mezzo canonicato, senza rifletterci un solo istante; ma poichè il saponaio diceva di no: --Neppure a <persName ref="Ferdinando_II"> Ferdinando II!</persName> -voleva 
+            fargli vedere che lui, povero canonico e nient'altro, si sentiva più forte del re. 
+         </p>
+
+         <p>
+            <persName ref="Nzulu_Strano"> -'Nzulu, </persName> se tu <distinct type="archaic"> riescissi!</distinct>
+         </p>
+
+         <p>
+            <distinct type="archaic"> Riesciva</distinct> sempre quel diavolo allampanato e giallastro, maledetto da Dio! E il mezzo canonicato se lo beccava lui, a poco a poco, lamentandosi tutti i giorni del suo brutto mestiere che non andava 
+            più, della <term type="caccia">selvaggina</term> diventata rara, della <term type="caccia">polvere</term> cattiva, dei <term type="caccia">pallini</term>  che costavano cari, quasi fos- <pb/> -sero fatti di argento e d'oro; di quella tristaccia 
+            della <persName ref="Capraia"> Capraia,</persName> che gli rodeva gli occhi del capo, malata dodici mesi all'anno! 
+         </p>
+
+         <p>
+            -Costei è la mia rovina. Ora ci vogliono sei <distinct type="archaic"> tarì</distinct>  per un intruglio dello speziale, e non ho nemmeno due grani. 
+         </p>
+
+         <p>
+            Così, oggi erano sei, domani dodici <distinct type="archaic"> tarì</distinct> che il canonico gli metteva nel pugno, di nascosto di sua sorella <persName ref="donna_Agnese"> donna Agnese,</persName> la quale sarebbe diventata una <distinct type="archaic">lima sorda,</distinct> se se ne fosse accorta. 
+            Ella ce l'aveva contro quel pezzo di scroccone, e non dava requie al fratello. 
+         </p>
+
+         <p>
+            Succedeva un battibecco di due ore, quando il canonico le diceva: 
+         </p>
+
+         <p>
+            -Verrà <persName ref="Nzulu_Strano"> 'Nzulu, </persName> per due <distinct type="archaic">tumoli</distinct> di frumento. Poveraccio! Perisce di fame.
+         </p>
+
+         <p>
+            -Dategli quello del canonicato, che mandate in casa di <persName ref="Donna_Toto"> donna Totò!</persName> Chi ne vede un chicco?
+         </p>
+
+         <p>
+            E spesso, infatti, egli inviava <persName ref="Nzulu_Strano"> 'Nzulu  </persName> da <persName ref="Donna_Toto"> donna Totò,</persName> perchè il grano del canonicato i fittaiuoli della collegiata andavano a scaricarlo là, con la scusa che il canonico gliel' aveva venduto.
+         </p>
+
+         <p>
+            -Sta bene, signor canonico! -rispondevano i fittaiuoli.
+         </p>
+
+         <p>
+            E sacravano sotto voce:
+         </p>
+
+         <p>
+            -La roba di Dio va al diavolo!
+         </p>
+
+         <p>
+             * * *
+         </p>
+
+         <p>
+            Ogni mattina, <persName ref="Donna_Toto"> donna Totò</persName>  preparava la pipa al canonico, perché facesse una fumatina, intanto che si riposava della salita, ora che la podagra gli ave- <pb/> -va mezze spezzate le gambe. Il fumo non rompeva digiuno; e se Gesù Cristo, entrandogli in bocca dopo la consacrazione, sentiva un po'di puzzo di tabacco, poteva ben compatirlo. Fumava anche il papa! 
+         </p>
+
+         <p>
+            Poi, il caffè di <persName ref="Donna_Toto"> donna Totò</persName>  aveva un'aroma speciale. Quello preparato da <persName ref="donna_Agnese"> donna Agnese</persName>  pareva al canonico proprio acqua affumicata. E sua sorella non pensava nè a crostini, nè a biscotti, nè a pan di spagna da intingere.
+         </p>
+
+         <p>
+            Indossando il camice e la pianeta, egli già cominciava a sentirsi solleticare le narici da quel profumo delizioso. Al vedere nella patena l’ostia da consacrare, pensava subito ai crostini, che erano assai più sostanziosi; e si spicciava, si spicciava dall’introibo all’ite missa est, tanto che il sagrestano durava fatica a tenergli dietro con gli amen e i cum spiritu tuo. 
+         </p>
+
+         <p>
+            In campagna, nella chiesola della masseria, egli si sbrigava per un altro verso. 
+         </p>
+
+         <p>
+            Ogni sabato sera, suo fratello <persName ref="Don_Franco"> Don Franco</persName> gli mandava la mula, e la partenza del canonico era uno spettacolo nella viuzza dove egli abitava. Tutti i suoi <term type="caccia">cani, </term> sguinzagliati, abbaiavano, si rincorrevano festosamente, facevano un chiasso indiavolato attorno alla mula sellata, che il garzone teneva per 
+            la briglia, aspettando che il canonico scendesse le scale portando in mano il <term type="caccia">fucile</term> e la <term type="caccia">carniera</term>  ad armacollo. 
+         </p>
+
+         <p>
+            <persName ref="Nzulu_Strano"> 'Nzulu Strano </persName> era li, alla cantonata, con la pipa in bocca e il <term type="caccia">fucile</term> in <distinct type="archaic"> ispalla </distinct> per fargli compagnia; <pb/>
+            e <distinct type="archaic"> carezzava</distinct> i <term type="caccia">cani,</term> o li richiamava col fischio e con la voce, se si allontanavano per le vie accosto: 
+         </p>
+
+         <p>
+            -Teh, Niévola! Teh, Cardillo!
+         </p>
+
+         <p>
+            Tutte le donnicciuole sugli usci. Bambini scalzi e stracciati schiamazzavano insieme <distinct type="archaic"> coi </distinct> cani attorno 
+            alla mula, che si lasciava tirare per la coda o per la criniera pacificamente, conoscendoli uno per uno, tante volte li aveva visti per la stessa occasione. 
+         </p>
+
+         <p>
+            -Buona caccia, signor canonico!
+         </p>
+
+         <p>
+            -Felice viaggio, signor canonico!
+         </p>
+
+         <p>
+            Solo una vecchierella non gli diceva nulla, <persName ref="Comare_Nina"> Comare Nina</persName> la sciancata.
+         </p>
+
+         <p>
+            Il canonico aveva notato che a ogni "Buona caccia, signor canonico" di quella vecchia sciancata, la <term type="caccia">polvere</term> non gli diceva più, i cappellotti non prendevano, i <term type="caccia">conigli</term>  si <distinct type="archaic">scotevano</distinct> <distinct type="archaic">da dosso</distinct>  i <term type="caccia">pallini</term>  quasi fossero stati <distinct type="archaic">goccie</distinct> d'acqua benedetta, e nell'andarsene via <distinct type="archaic"> quatti quatti,</distinct> voltatisi indietro, agitavano le orecchie per canzonarlo. 
+         </p>
+
+         <p>
+            -Voi non dovete dirmi niente, jettatoraccia! Avete capito?
+         </p>
+
+         <p>
+             E la povera vecchierella non gli aveva detto più niente.
+         </p>
+
+         <p>
+            Alla masseria, il preparatio ad missam era la posta <distinct type="archaic">pei</distinct> <term type="caccia">colombi</term> selvatici. Intanto che il massaio, sonando con la buccina marina l'appello ai contadini per la santa messa, faceva rintronar la vallata, il canonico andava ad appostarsi laggiù, sotto il sorbo, e <persName ref="Nzulu_Strano"> 'Nzulu  </persName> buttava sassi di cima alla rupe, tra i fichi d' India e gli oleastri, per <distinct type="archaic">ispaventare</distinct> i <term type="caccia">colombi</term>  e farli scappare dai nidi. Essi scappavano 
+            a stormi, con gran fruscio di <distinct type="archaic">ale,</distinct> a ogni sasso che <pb/> rumoreggiava sbalzando tra le schegge della rupe, i fichi d'India e gli oleastri; e subito, si udivano due colpi di  <term type="caccia">fucile,</term> uno dietro l’altro, laggiù, di sotto il sorbo. <persName ref="Nzulu_Strano"> 'Nzulu  </persName> ne vedeva il fumo; e vedeva 
+            anche il canonico raccogliere frettolosamente i morti e riporli nella <term type="caccia">carniera.</term> E la buccina del massaro continuava ad assordare la vallata; e i colpi di <term type="caccia">fucile</term> a echeggiare tra le rupi.
+         </p>
+
+         <p>
+             Nella chiesuola, i <term type="caccia">cani</term>  scodinzolavano e saltavano attorno al canonico mentre <persName ref="Nzulu_Strano"> 'Nzulu  </persName> lo aiutava a indossare i paramenti sacri, a preparare il calice e aprire il messale.
+         </p>
+
+         <p>
+             Il canonico gli aveva insegnato a servir messa. Che quegli storpiasse il latino, non importava; Domineddio capiva lo stesso. E poi, era affare di un quarto d'ora. 
+         </p>
+
+         <p>
+            Un giorno però la messa del canonico durò anche meno.
+         </p>
+
+         <p>
+            A un dominus vobiscum, dalla porta spalancata, in fondo al viale affollato di contadini <distinct type="archaic">in ginocchiati</distinct> che la chiesola non capiva, davanti le piante dei carciofi, aveva visto un <term type="caccia">cane</term>  di pelo castagno, piccolo, seduto <distinct type="archaic">su le</distinct> gambe posteriori, col muso all'erta, le orecchie <distinct type="archaic">ritte</distinct> e lo sguardo fisso. Testa 
+            intelligente, naso di razza, musino bene affilato da <term type="caccia">cane</term> da fermo; non poteva sbagliarsi. 
+         </p>
+
+         <p>
+            <distinct type="archaic">Da prima,</distinct> resistette alla curiosità e sbrigò l'evangelo; ma voltandosi di nuovo, a una squadratura più lunga, da quell'espertissimo cacciatore ch'egli era, potè giudicarlo meglio.  Accennò a <persName ref="Nzulu_Strano"> 'Nzulu, </persName> e fingendo di dirgli qualcosa che riguardava il servizio divino, gli soffiò a voce bassa: <pb/>
+         </p>
+
+         <p>
+            -Quel <term type="caccia">cane</term> ... presso i carciofi, guarda. Di chi è? <persName ref="Nzulu_Strano"> 'Nzulu,</persName> data un'occhiata, rispose con una mossettina di testa e di spalle: Di chi? Non lo sapeva. Ma ne domandò al massaio inghinocchiato presso l'altare. Il massaio si rivolse per guardare; e allora coloro ch'erano nella chiesuola si voltarono tutti, intrigati; e fuori, nel viale, seguì un più rapido movimento di teste alla direzione della carciofaia, un domandare e un rispondere con monosillabi e con cenni... Nessuno ne capiva niente. 
+         </p>
+
+         <p>
+            Il <term type="caccia">cane,</term> quasi ne avesse capito qualcosa lui, si levò e <distinct type="archaic">disparve,</distinct> mentre il canonico, aprendo le braccia per un altro dominus vobiscum, sgranava gli occhi, arrabbiato che fosse andato via prima ch'egli avesse terminato la messa. Quei cinque minuti, che occorsero per arrivare affrettatamente alla benedizione trinciata in un battibaleno, gli erano parsi un'eternità. Cavatosi il manipolo, la pianeta, 
+            il camice, che stracció a una manica, disse al massaio: 
+         </p>
+
+         <p>
+            -Di chi è quel <term type="caccia">cane?</term> 
+         </p>
+
+         <p>
+         -Dev'essere di <persName ref="Corda_al_piede"> Corda-al-piede,</persName> -rispose un contadino accostatosi per sapere di che si trattasse. 
+         Infatti, presso i carciofi, il figlio di <persName ref="Corda_al_piede"> Corda-al-piede</persName> lisciava l'animale e gli diceva ridendo: 
+         </p>
+
+         <p>
+            -Hai sentito la messa anche tu?
+         </p>
+
+         <p>
+             Il <term type="caccia">cane</term>  salterellava, faceva le viste di volergli mordere la mano, per carezza, ringhiando eccitato e allegro; e abbaiava, a riprese se qualcuno gli toccava la coda, o tentava di accarezzarlo il padrone. <pb/>
+         </p>
+
+         <p>
+            -Che ne fai di questo <term type="caccia">cane?</term> -gli domandò il canonico.
+         </p>
+
+         <p>
+            -È di mio padre.
+         </p>
+
+         <p>
+            -Me lo prendo io.
+         </p>
+
+         <p>
+            -Neppure per chiasso. Gli costa mezza <distinct type="archaic">salma</distinct> di fave.
+         </p>
+
+         <p>
+            -Gliene darò una intera.
+         </p>
+
+         <p>
+            -Niente, signor canonico. Gli vuol bene più che a me che gli son figlio.
+         </p>
+
+         <p>
+            -Su: venga a prendersi le fave. Va'a dirglielo. Ma, un'ora dopo, <persName ref="Corda_al_piede"> Corda-al-piede</persName> arrivò, trafelato 
+            <distinct type="archaic">pel</distinct> cammino fatto, strepitando: 
+         </p>
+
+         <p>
+            -Voglio il mio <term type="caccia">cane!</term> 
+         </p>
+
+         <p>
+            -Bestia, che te ne fai?
+         </p>
+
+         <p>
+            -Voglio il mio <term type="caccia">cane!</term>
+         </p>
+
+         <p>
+            Non rispondeva altro. E siccome <persName ref="Nzulu_Strano"> 'Nzulu  </persName> e il massaro cercavano d'inframmettersi, cominciò a sbraitare e a dir loro delle parolacce. 
+         </p>
+
+         <p>
+            <persName ref="Nzulu_Strano"> 'Nzulu  </persName> lo tirò da parte, vicino al pollaio: 
+         </p>
+
+         <p>
+            -Come? Dite di no al signor canonico? Non lo sapete dunque ch'egli può giovarvi in tutte le circostanze?...
+         </p>
+
+          <p>
+            -Voglio il mio <term type="caccia">cane!</term> 
+         </p>
+
+         <p>
+            Quel giorno il canonico tornò di malumore al paese; e per una settimana discorse di quel <term type="caccia">cane</term>  con <persName ref="Nzulu_Strano"> 'Nzulu  </persName> e con gli altri che venivano a fargli visita, al solito, <distinct type="archaic">pel</distinct> <term type="caccia">levriere,</term> o <distinct type="archaic">pel</distinct> <term type="caccia">furetto,</term> o per 
+            qualche carica di <term type="caccia">polvere</term> da caccia, di quella che 
+            si trovava soltanto presso di lui ed era inutile cercarla altrove... 
+         </p> 
+
+         <p>
+            <persName ref="Cottone"> Cottone,</persName> un altro cacciatore di mestiere, lo conosceva meglio di tutti il <term type="caccia">cane</term>  di <persName ref="Corda_al_piede"> Corda-al-piede:</persName> <pb/> Animale <distinct type="archaic"> coi </distinct> fiocchi! Cacciava da sè, e portava i <term type="caccia">conigli</term> al padrone senza che nessuno l'avesse addestrato. Ma quello zotico non si degnava nemmeno di prestarlo.
+         </p>
+
+         <p>
+            Mezzo paese si mise in moto, per far cosa grata 
+            al signor canonico. E <persName ref="Nzulu_Strano"> 'Nzulu  </persName> andava e veniva, aumentando ogni volta il prezzo che quegli era pronto a pagare. <persName ref="Corda_al_piede"> Corda-al-piede</persName> più si vedeva pregato, e più diventava duro. Il canonico, quando gli riferivano le risposte, si mordeva le mani. Non gli era mai accaduto un caso simile; gli pareva impossibile che quel pezzo di villanzone resistesse alle offerte e alle minacce. Giacchè egli, alla fine, era ricorso alle minacce per intimorirlo. <persName ref="Corda_al_piede"> Corda-al-piede</persName> 
+            rispondeva: 
+         </p>
+
+         <p>
+             -Nel mondo, due sono potenti: chi ha molto e 
+            chi non ha niente. Che può farmi il canonico? Questi, tornando a dire la messa in campagna, 
+             aveva delle distrazioni. Vedeva sempre, là, in fondo 
+             al viale, presso la carciofaia, il <term type="caccia">cane</term>  di <persName ref="Corda_al_piede"> Corda-al-piede,</persName> che non c'era più, e non s'era più visto perchè il padrone lo teneva in casa incatenato. 
+         </p>
+
+         <p>
+            -Nè io, nè lui! -decise il canonico.
+         </p>
+
+         <p>
+            E trovò chi, con la scusa di dire una parolina 
+            a <persName ref="Corda_al_piede"> Corda-al-piede,</persName> andò a buttargli in casa una polpetta di stricnina <distinct type="archaic">pel</distinct> <term type="caccia">cane.</term> 
+         </p>
+
+         <p>
+             Ma un sabato sera, il <persName ref="Canonico_Salamanca"> Canonico Salamanca,</persName> andando a <placeName ref="Bardella">Bardella</placeName> per la messa della domenica, vide proprio la morte con gli occhi, come diceva <persName ref="Nzulu_Strano"> 'Nzulu, </persName> raccontando il fatto. <persName ref="Corda_al_piede"> Corda-al-piede,</persName> che attendeva allo svolto della strada, presso il <placeName ref="Vallone_della_Lamia">Vallone della Làmia,</placeName> gli puntò il <term type="caccia">fucile</term> in faccia, esitante: <pb/>
+         </p>
+
+         <p>
+            -Per la Madonna!... dovrei farvi fare una fiammata e andarmene in galera!
+         </p>
+
+         <p>
+            Il canonico, colto alla sprovvista, fermò la mula, pallido come un cadavere, balbettando: 
+         </p>
+
+         <p>
+            -Contro un sacerdote?
+         </p>
+
+         <p>
+            -Ringraziate la chierica di Cristo, che non siete degno d'avere in testa!
+         </p>
+
+         <p>
+            E <persName ref="Corda_al_piede"> Corda-al-piede,</persName> abbassato il <term type="caccia">fucile,</term> aveva tirato, per spavalderia <distinct type="archaic">su le</distinct> macchie di rovi del ciglione, avanti che <persName ref="Nzulu_Strano"> 'Nzulu  </persName> spiccasse un salto per tentare di disarmarlo.
+         </p>
+
+          <p>
+             * * *
+         </p>
+
+         <p>
+            Ahimė! I bei tempi delle grandi giornate di caccia erano già lontani; gli anni e, più, la podagra, avevano ridotto il canonico a camminare come un invalido, reggendosi su la canna d'india, allorchè s'avviava per andare a celebrare la messa, o a recitare l'uffizio. Le sue fermate da <persName ref="Donna_Totò"> donna Totò </persName> grassa e fresca a dispetto dell'età, erano diventate più lunghe <distinct type="archaic">pei</distinct> malanni e per l'abitudine. 
+         </p>
+
+         <p>
+            Il nuovo vescovo, rigido quanto il predecessore, nell'occasione della visita diocesana, fece al canonico un'altra lavata di capo. 
+         </p>
+
+         <p>
+            -Scandalo! Dovrò levarle la messa?
+         </p>
+
+         <p>
+            -Che scandalo vuol ella che io dia, <persName ref="Monsignore"> Monsignore</persName> mio? -aveva risposto il canonico con voce di rimpianto. -Non vede come sono ridotto?
+         </p>
+
+         <p>       
+            E il vescovo s'era stretto nelle spalle brontolando, e lo aveva lasciato in pace. <pb/>
+         </p>
+
+         <p>
+             Per ciò ogni mattina si vedeva il <persName ref="Canonico_Salamanca"> Canonico Salamanca</persName> che, appoggiandosi alla canna d'India, trascinava per la salita le gambe indolenzite, fino alla porta di <persName ref="Donna_Totò"> donna Totò.</persName> Ella lo attendeva al terrazzino, sapendo l'ora, e accorreva per aiutarlo con una mano a montare i pochi scalini, levargli il mantello e prendere il nicchio per riporli sul letto, e porgergli la pipa già preparata sul tavolino con accanto la scatola di latta dei fiammiferi di legno. 
+         </p>
+
+         <p>
+            Pareva che, senza quella pipata preventiva, il canonico non potesse nè dir messa, nè cantare al coro; pareva che, senza lo stimolo di quella tazza di buon caffè e il conforto dei crostini, non avesse potuto più avere la forza di arrivare a casa. 
+         </p>
+
+         <p>
+            In verità, le sue visite erano oramai la cosa più innocente di questo mondo. Il canonico si divertiva <distinct type="archaic"> coi</distinct> <term type="caccia">merli</term>  e con le <term type="caccia">gazze</term>  che <persName ref="Donna_Totò"> donna Totò </persName> ammaestrava per proprio svago e chiamava figliuoli. 
+            A uno dei <term type="caccia">merli,</term>  al più vecchio, ella aveva messo nome Canonico. Non cantava più; stava appollaiato tristamente sulla stecca della gabbia, quasi seccato di vivere, e si cibava soltanto di zuppa di biscottini, di quelli che il canonico amava intingere nel caffè. Egli lo guardava, mandando fuori grandi boccate di fumo, quasi fosse stato il suo ritratto. -invalido anche lui, quel povero canonico, dentro la gabbia! -E gli fischiava, quasi dovessero intendersela bene fra loro, uno più invalido dell'altro. Canonico rizzava la testa spiumata, <distinct type="archaic">scoteva</distinct> le ali e la coda, mandava fuori un flebile <distinct type="archaic">chioccolio,</distinct> e rimaneva li, appollaiato su la stecca, immobile, aspettando di morire. <pb/>
+         </p>
+
+         <p>
+            Le due <term type="caccia">gazze</term>  intanto accorrevano a beccare familiarmente la punta delle scarpe del canonico, che si compiaceva d'incitarle. Vivaci, striminzite per le ali tagliate assai corte e il codione senza 
+            penne, esse gli s'arrampicavano su per le gambe, sporcandogli la zimarra, impertinenti, crocidanti, <distinct type="archaic">ciangottando</distinct> parole con la lingua mozzata a posta per addestrarle a parlare.
+         </p>
+
+         <p>
+            -Figlio! Figlio! -suggeriva <persName ref="Donna_Toto"> Donna Totò, </persName> contenta e superba delle sue bestioline. -Chi è? Chi è? 
+         </p>
+
+         <p>
+            E le <term type="caccia">gazze</term>  ripetevano, roche e stridule:
+         </p>
+
+         <p>
+            -Figlio! Figlio! Chi è? 
+         </p>
+
+         <p>
+            Il canonico, continuando a fumare, diceva alla signora:
+         </p>
+
+         <p>
+             -Prendetemi la cassettina.
+         </p>
+
+         <p>
+            Si occupava, là e a casa, fabbricando chiòccoli per la caccia delle <term type="caccia">quaglie;</term>  e in quella cassetta, come nell'altra che aveva a casa, stavano riposti pelli di capretto conce, cannellini di stinchi di tacchino, minuzzoli di candele di cera fattisi dare dai sagrestani, matasse di refe grosso, forbici, aghi, un ditale e il legnetto intagliato a vite, con cui dare le pieghe a mantice ai sacchettini dei chiòccoli. 
+            Ritagliava la pelle sul modello di cartone e ne cuciva gli orli combaciati attentamente; poi, foggiata con le dita una pallottolina di cera, la cacciava in fondo al sacchetto allestito; serviva per dare appoggio al chiòccolo sul polpastrello del pollice, quando dovevano suonarlo. Indi, infilatovi il legnetto, avvolgeva la pelle con uno spago tra i pani della vite, perché̀ prendesse le pieghe e servisse da mantice. E che ammattimento quei can- <pb/> -nellini di osso, forati in mezzo, da adattare alla bocca del sacchetto con un tappo di cera, <distinct type="archaic">pel</distinct> suono! E quei peduncoli di spago da appiccare in calce al chiòccolo, per poterlo tener fermo!... Lavoro di pazienza, insomma, che svagava molto il canonico. Gli rammentava i bei giorni d'estate tra i seminati della <placeName ref="Piana">Piana,</placeName> ai tempi ch'egli e <persName ref="Nzulu_Strano"> 'Nzulu  </persName> davano la caccia alle <term type="caccia">quaglie</term>  con <term type="caccia">reti</term> e <term type="caccia">fucile!</term> Quacquarà! Quacquarà! E le <term type="caccia">quaglie</term>  accorrevano al richiamo, incappando fra le vaste <term type="caccia">reti</term> stese sui seminati che si piegavano, cascando fulminate da colpi infallibili: Tum! Tum! Gli pareva di sentirseli ancora dentro gli orecchi. Tum! Tum! 
+         </p>
+
+         <p>
+            Da <persName ref="Donna_Toto"> Donna Totò</persName> egli lavorava tranquillamente. A casa, sua sorella <persName ref="Donna_Agnese"> Donna Agnese,</persName> a vedergli sciupare quelle buone pelli di capretto che costavano tanti quattrini, brontolava da mattina a sera:
+         </p>
+
+         <p>
+            -Che ne fate dei <distinct type="archaic">chioccoli,</distinct> ora che non potete più andare a caccia? Pazzo, pazzo da legare! 
+         </p>
+
+         <p>
+            E, se lo trovava a frugare <distinct type="archaic">pei</distinct> cassettoni in cerca d'un mozzicone di candela, o d'una matassa di 
+            refe, lo sgridava peggio di un bambino:
+         </p>
+
+         <p>
+            -Non sconvolgete ogni cosa! Non vi bastano ancora cento e più chiòccoli?
+         </p>
+
+         <p>
+            Egli stava zitto, e intascava i mozziconi di candele, se ne trovava. Quando non ne trovava, ricorreva fin alle candele benedette della Candelora,
+            che <persName ref="Donna_Agnese"> Donna Agnese</persName> teneva appese al capezzale e dovevano servire in punto di morte.
+         </p>
+
+         <p>
+            -Scomunicato! E siete sacerdote! Anche le candele benedette!
+         </p>
+
+         <p>
+           <persName ref="Donna_Agnese"> Donna Agnese</persName> non se ne dava pace. <pb/>
+         </p>
+
+         <p>
+            Per questo, a ogni accesso di podagra che inchiodava il canonico sulla poltrona, e lo faceva trambasciare, non lo compativa, indispettita: 
+         </p>
+
+         <p>
+            -È <distinct type="archaic">gastigo</distinct> di Dio! Dovreste intenderlo.
+         </p>
+
+         <p>
+            Faceva meraviglia come egli non perdesse la pazienza.
+         </p>
+
+         <p>
+            -A che siamo co' <distinct type="archaic">chioccoli?</distinct> -gli domandava <persName ref="Nzulu_Strano"> 'Nzulu,</persName> che ora veniva più di rado.
+         </p>
+
+         <p>
+            -Quattrocento!
+         </p>
+
+         <p>
+            -Dovreste darmene un paio; è la stagione delle <term type="caccia">quaglie.</term> 
+         </p>
+
+         <p>
+           Serviranno per me, quando sarò morto.
+         </p>
+
+         <p>
+            -Come mai, signor canonico?
+         </p>
+
+         <p>
+            -Gli ho destinati ai ragazzi poveri, per testamento; dovranno accompagnare la mia bara, suonandomi dietro: Quacquarà! Quacquarà!
+         </p>
+
+         <p>
+            -E rideva. Con tal pretesto, non regalava un <distinct type="archaic">chiòccolo</distinct> neppure a <persName ref="Nzulu_Strano"> 'Nzulu Strano. </persName>
+         </p>
+
+         <p>
+            -Non vi si riconosce più, signor canonico!
+         </p>
+
+          <p>
+             * * *
+         </p>
+
+         <p>
+            Non si riconosceva egli stesso, su quella poltrona maledetta, dove non trovava requie da un mese, nè giorno nè notte.
+         </p>
+
+         <p>
+            'Nzulu gli recava le notizie di <persName ref="Donna_Totò"> Donna Totò.</persName>
+         </p>
+
+         <p>
+            Il vecchio merlo Canonico, morto di sfinimento; una delle <term type="caccia">gazze,</term>  la migliore, annegata in un catino d'acqua; <persName ref="Donna_Totò"> Donna Totò</persName> poverina, n'avea pianto quasi come per una  figliuola! E non si sentiva bene neppur lei. Voleva il dottore... <pb/>
+         </p>
+
+         <p>
+            Da li a qualche giorno, le cattive notizie incalzarono: <persName ref="Donna_Totò"> Donna Totò</persName> stava male assai. 
+         </p>
+
+         <p>
+             Il canonico dondolava la testa:
+         </p>
+
+         <p>
+             -Ah, se accade una disgrazia, <persName ref="Nzulu_Strano"> 'Nzulu!... </persName> Dove sarebbe andato per la sua fumatina prima della messa? E, dopo, <distinct type="archaic">pel</distinct> caffè <distinct type="archaic"> coi </distinct> crostini e i biscotti?
+         </p>
+
+         <p>
+            Una mattina che si senti in gambe, cominciò lentamente a vestirsi.
+         </p>
+
+         <p>
+            <persName ref="Nzulu_Strano"> 'Nzulu  </persName> allora, atteggiando a compunzione il viso allampanato e giallastro, credette opportuno dirgli: -Restate in casa, signor canonico.... Fate la volontà di Dio!... Siamo tutti destinati a morire!
+         </p>
+
+         <p>
+            Due <distinct type="archaic">lagrime</distinct> rigarono la faccia smunta del canonico; pure volle finire di vestirsi, e scese le scale reggendosi al braccio di <persName ref="Nzulu_Strano"> 'Nzulu.  </persName>
+         </p>
+
+         <p>
+            -Almeno celebrerò la santa messa in suffragio dell'anima sua!
+         </p>
+
+         <p>
+            Presero però un'altra strada, per non passare davanti quella porta dove <persName ref="Donna_Totò"> Donna Totò</persName> gli veniva incontro per aiutarlo a salire i quattro scalini.
+         </p>
+
+         <p>
+            In sagrestia, rivolti gli occhi al gran crocifisso di carta pesta che sormontava gli scaffali:
+         </p>
+
+         <p>
+            -Signor Iddio! -esclamò lamentosamente il canonico: -O che non vi bastava Maria Maddalena in paradiso?
+         </p>
+
+         <p>
+            E lasciò infilarsi il camice dal sagrestano.
+         </p>
+
+         <p>
+         </p>
+         <p>
+         </p>
+
+         <closer> 
+         <date when="1981-09" type="composition"> <placeName ref="#Roma">Roma,</placeName>settembre 1891</date>
+         </closer>
+
+      </body>
+   </text>
+</TEI>
+
